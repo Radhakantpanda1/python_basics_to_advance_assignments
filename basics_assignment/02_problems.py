@@ -37,7 +37,7 @@ spam=int(input("Enterthe number-"))
 if spam==1:
     print(1)
 elif spam==2:
-    print(2)
+    print("Hello")
 else:
     print("Greetings!")
 

@@ -1,0 +1,79 @@
+1. Why are functions advantageous to have in your programs?
+ans.
+Functions are block of codes which are used o perform a specific task they ensure code reusability, quick debugging, reduces lines of code, increases code readability etc.
+
+
+2. When does the code in a function run: when it's specified or when it's called?
+ans.
+when it is called
+
+3. What statement creates a function?
+ans.
+In Python def function_name: is used to create a function.
+
+
+4. What is the difference between a function and a function call?
+ans.
+Functions are block of codes which are used o perform a specific task they ensure code reusability, quick debugging, reduces lines of code, increases code readability etc.
+function call is denoted as function_name() it gets executed when it is called.
+
+
+5. How many global scopes are there in a Python program? How many local scopes?
+ans.
+One Global Scope:
+ A Python program has exactly one global scope. This global scope is created when the program starts and lasts until the program terminates. It is where global variables are defined, and they are accessible from anywhere in the program, as long as they are not shadowed by local variables.
+ Multiple Local Scopes:
+  A Python program can have multiple local scopes. Each function call creates a new local scope, and these local scopes are independent of each other. Variables defined in a local scope are only accessible within that function and are destroyed once the function returns.
+
+6. What happens to variables in a local scope when the function call returns?
+ans.
+->A local scope refers to the region within a function where local variables are defined. ->These variables are created when the function is called and exist only within the function's execution context.
+->When a function is called, a new local scope is created, and any variables declared within this function are allocated memory and initialized.
+->Once the function finishes executing (either by reaching the end of the function, encountering a return statement, or throwing an exception), the local scope is destroyed.
+->All local variables are deallocated, meaning their memory is freed up and they can no longer be accessed.
+
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+ans.
+A return value is a value returned by a function whenever it is called.
+Yes it is possible to have a return value in an expression.
+ex-
+def add(a, b):
+    return a + b
+total = add(3, 4) * 2  # total will be 14 (7 * 2)
+
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+ans.
+None
+
+9. How do you make a function variable refer to the global variable?
+ans.
+Using global key word
+example-
+x=30;
+def modify():
+    global x
+    x=55
+print(x) # 55
+
+
+10. What is the data type of None?
+ans.
+<class 'NoneType'>
+
+
+11. What can you do to save a programme from crashing if it encounters an error?
+ans.
+Exception Handling:
+Use try-except blocks to catch and handle exceptions.
+Ensure you handle specific exceptions and not just a generic catch-all.
+
+
+12. What is the purpose of the try clause? What is the purpose of the except clause?
+try Clause
+Purpose: The try clause is used to wrap the code that might raise an exception. It defines a block of code in which you anticipate that an error might occur.
+
+except Clause
+Purpose: The except clause is used to handle exceptions that are raised in the try block. It defines how the program should respond to specific types of exceptions.
+
